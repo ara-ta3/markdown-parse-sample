@@ -29,6 +29,7 @@ function childrenToString(children: Content[]): string {
   return children.reduce((all, current) => all + contentToString(current), "");
 }
 
+// @see https://github.com/remarkjs/remark/issues/444
 function contentToString(c: Content): string {
   if (is<Heading>(c, "heading")) {
     return childrenToString(c.children) + "\n";
