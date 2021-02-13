@@ -1,6 +1,8 @@
 YARN=yarn
 NODE=node
 
+.PHONY: test
+
 install:
 	$(YARN) install
 
@@ -12,3 +14,6 @@ run: compile
 
 compile/watch:
 	$(YARN) run tsc/watch
+
+test:
+	$(YARN) test

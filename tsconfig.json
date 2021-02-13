@@ -1,13 +1,12 @@
 {
   "compilerOptions": {
-    "module": "system",
+    "module": "commonjs",
     "noImplicitAny": true,
     "removeComments": true,
     "preserveConstEnums": true,
-    "outFile": "dist/main.js",
+    "moduleResolution": "node",
     "sourceMap": true,
     "lib": ["es2020"]
   },
-  "include": ["src/**/*"],
-  "exclude": ["__dist"]
+  "include": ["src/**/*", "test/**/*"]
 }
